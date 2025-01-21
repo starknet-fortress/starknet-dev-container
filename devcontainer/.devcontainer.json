@@ -1,0 +1,14 @@
+{
+  "name": "project",
+  "image": "starknet-fortress/starknet-devcontainer:latest",
+  "postStartCommand": "asdf install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "StarkWare.cairo1",
+        "tamasfe.even-better-toml",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}
