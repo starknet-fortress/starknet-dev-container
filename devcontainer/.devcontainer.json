@@ -1,6 +1,6 @@
 {
   "name": "project",
-  "image": "starknet-fortress/starknet-devcontainer:latest",
+  "image": "starknet-fortress/starknet-dev-container:latest",
   "postStartCommand": "asdf install",
   "customizations": {
     "vscode": {
