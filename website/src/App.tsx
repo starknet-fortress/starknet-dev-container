@@ -74,19 +74,83 @@ function App() {
       {/* Tools & Features */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Available Tools</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            {[
-              'ASDF', 'Scarb',  'Starkli', 'Starknet Foundry', 'Starknet Devnet', 'NodeJs', 'Yarn', 'Rust'
-            ].map((tool) => (
-              <div key={tool} className="flex items-center space-x-2 bg-gray-700/30 p-4 rounded-lg">
-                <CheckCircle2 className="w-5 h-5 text-green-400" />
-                <span>{tool}</span>
+    <h2 className="text-3xl font-bold text-center mb-12">
+      <span className="bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
+        Available Tools
+      </span>
+    </h2>
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      {/* Core Tools */}
+      <div className="bg-gray-700/30 p-6 rounded-xl border border-blue-400/20 hover:border-blue-400/40 transition-all hover:transform hover:scale-105 backdrop-blur-sm">
+        <h3 className="text-xl font-semibold mb-4 text-blue-400">Core Development</h3>
+        <div className="space-y-3">
+          <div className="flex items-center space-x-3 group">
+            <div className="bg-blue-400/10 p-2 rounded-lg group-hover:bg-blue-400/20 transition-colors">
+              <CheckCircle2 className="w-5 h-5 text-blue-400" />
               </div>
-            ))}
+            <span className="text-gray-300 group-hover:text-white transition-colors">ASDF</span>
+          </div>
+          <div className="flex items-center space-x-3 group">
+            <div className="bg-blue-400/10 p-2 rounded-lg group-hover:bg-blue-400/20 transition-colors">
+              <CheckCircle2 className="w-5 h-5 text-blue-400" />
+        </div>
+            <span className="text-gray-300 group-hover:text-white transition-colors">Scarb</span>
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Starknet Tools */}
+      <div className="bg-gray-700/30 p-6 rounded-xl border border-purple-400/20 hover:border-purple-400/40 transition-all hover:transform hover:scale-105 backdrop-blur-sm">
+        <h3 className="text-xl font-semibold mb-4 text-purple-400">Starknet Specific</h3>
+        <div className="space-y-3">
+          <div className="flex items-center space-x-3 group">
+            <div className="bg-purple-400/10 p-2 rounded-lg group-hover:bg-purple-400/20 transition-colors">
+              <CheckCircle2 className="w-5 h-5 text-purple-400" />
+            </div>
+            <span className="text-gray-300 group-hover:text-white transition-colors">Starkli</span>
+          </div>
+          <div className="flex items-center space-x-3 group">
+            <div className="bg-purple-400/10 p-2 rounded-lg group-hover:bg-purple-400/20 transition-colors">
+              <CheckCircle2 className="w-5 h-5 text-purple-400" />
+            </div>
+            <span className="text-gray-300 group-hover:text-white transition-colors">Starknet Foundry</span>
+          </div>
+          <div className="flex items-center space-x-3 group">
+            <div className="bg-purple-400/10 p-2 rounded-lg group-hover:bg-purple-400/20 transition-colors">
+              <CheckCircle2 className="w-5 h-5 text-purple-400" />
+            </div>
+            <span className="text-gray-300 group-hover:text-white transition-colors">Starknet Devnet</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Additional Tools */}
+      <div className="bg-gray-700/30 p-6 rounded-xl border border-fuchsia-400/20 hover:border-fuchsia-400/40 transition-all hover:transform hover:scale-105 backdrop-blur-sm">
+        <h3 className="text-xl font-semibold mb-4 text-fuchsia-400">Additional Tools</h3>
+        <div className="space-y-3">
+          <div className="flex items-center space-x-3 group">
+            <div className="bg-fuchsia-400/10 p-2 rounded-lg group-hover:bg-fuchsia-400/20 transition-colors">
+              <CheckCircle2 className="w-5 h-5 text-fuchsia-400" />
+            </div>
+            <span className="text-gray-300 group-hover:text-white transition-colors">NodeJs</span>
+          </div>
+          <div className="flex items-center space-x-3 group">
+            <div className="bg-fuchsia-400/10 p-2 rounded-lg group-hover:bg-fuchsia-400/20 transition-colors">
+              <CheckCircle2 className="w-5 h-5 text-fuchsia-400" />
+            </div>
+            <span className="text-gray-300 group-hover:text-white transition-colors">Yarn</span>
+          </div>
+          <div className="flex items-center space-x-3 group">
+            <div className="bg-fuchsia-400/10 p-2 rounded-lg group-hover:bg-fuchsia-400/20 transition-colors">
+              <CheckCircle2 className="w-5 h-5 text-fuchsia-400" />
+            </div>
+            <span className="text-gray-300 group-hover:text-white transition-colors">Rust</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Getting Started */}
       <section id="get-started" className="py-16 bg-gray-800/50">
